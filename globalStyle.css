@@ -1,0 +1,54 @@
+:root {
+    --bg-main: #353c40;
+    /* globale Textfarbe */
+    --text-main-color: #fff;
+    /* alternative Textfarbe */
+    --text-alt-color: #fffb;
+    /* >>> hier weitere gleichartige Textfarb-variablen hinzufügen für z.B. Header, Links, abgedunkelter text... */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-main-color);
+    font-size: 100%;
+    /* background: var(--bg-main); */
+    /* color: var(--text-main-color); */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Roboto";
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--text-alt-color);
+}
+
+p {
+    /* line-height: 1.3em; */
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--text-main-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+
+    transition: 0.15s ease-in-out;
+}
+a:hover {
+    color: #d9a91a;
+    /* color: #d9cf1a; */
+    text-decoration: underline;
+}
